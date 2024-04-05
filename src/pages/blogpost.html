@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post </title>
+</head>
+
+<body>
+    <div class="content">
+        <div class="form-container">
+            <form class="blog-form" id="blog-form">
+                <div class="form-input-group">
+                    <label for="title">Title:</label>
+                    <input name="title" id="title" value=""></label>
+                </div>
+                <div class="form-input-group">
+                    <label for="blog-content">Blog:</label>
+                    <textarea name="content" id="blog-content" value=""></textarea>
+                </div>
+                <div class="form-input-group">
+                    <div class="radioinput">
+                        <input type="radio" id="unpublished" name="status" value="Unpublished" checked>
+                        <label for="unpublished">Unpublished</label><br>
+                    </div>
+                    <div class="radioinput">
+                        <input type="radio" id="published" name="status" value="Published">
+                        <label for="published">Published</label><br>
+                    </div>
+                    <div class="form-buttons">
+                        <div id="save-button" class="form-button">Save</div>
+                        <div id="delete-button" class="form-button">Delete</div>
+                    </div>
+                    <div id="form-errors-container"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

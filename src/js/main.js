@@ -11,7 +11,7 @@ async function getposts() {
     if(jwtUser){
     const userId = jwtUser.sub 
     try {
-        const response = await fetch(`http://localhost:3000/api/users/${userId}`, {headers: {
+        const response = await fetch(`https://weak-honorable-degree.glitch.me/api/users/${userId}`, {headers: {
             "Content-Type": "application/json",
             'Authorization': 'Bearer ' + localStorage.getItem('userToken')
         }})

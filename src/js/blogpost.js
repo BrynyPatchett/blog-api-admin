@@ -23,7 +23,7 @@ if(blogid){
 async function getpost() {
 
     try {
-        const blogResponse = await fetch(`http://localhost:3000/api/posts/${blogid}`)
+        const blogResponse = await fetch(`https://weak-honorable-degree.glitch.me/api/posts/${blogid}`)
 
         if (!blogResponse.ok) {
             throw new Error();
@@ -41,7 +41,7 @@ async function getpost() {
 
 async function deletePost(){
     try {
-        const response = await fetch(`http://localhost:3000/api/posts/${blogid}`, {
+        const response = await fetch(`https://weak-honorable-degree.glitch.me/api/posts/${blogid}`, {
             method: 'DELETE', 
              headers: {
                 "Content-Type": "application/json",
@@ -71,7 +71,7 @@ async function deletePost(){
 async function updatePost(){
     const formData = new FormData(form);
     try {
-        const response = await fetch(`http://localhost:3000/api/posts/${blogid}`, {
+        const response = await fetch(`https://weak-honorable-degree.glitch.me/api/posts/${blogid}`, {
             method: 'PUT', 
             body: JSON.stringify(Object.fromEntries(formData)),
              headers: {
@@ -101,7 +101,7 @@ async function updatePost(){
 async function createPost(){
     const formData = new FormData(form);
     try {
-        const response = await fetch(`http://localhost:3000/api/posts`, {
+        const response = await fetch(`https://weak-honorable-degree.glitch.me/api/posts`, {
             method: 'POST', 
             body: JSON.stringify(Object.fromEntries(formData)),
              headers: {
